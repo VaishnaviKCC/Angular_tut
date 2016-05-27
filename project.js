@@ -98,7 +98,7 @@ angular.module('project', ['ngRoute', 'firebase'])
  
     editProject.destroy = function() {
         editProject.projects.$remove(editProject.project).then(function(data) {
-           $location.path('/');
+            $location.path('/');
         });
     };
  
